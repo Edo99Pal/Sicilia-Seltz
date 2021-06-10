@@ -1,0 +1,107 @@
+:root {
+    box-sizing: border-box;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+header {
+    min-height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('images/header.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+header > nav {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100vw;
+    max-width: 100%;
+    text-align: center;
+    font-weight: 300;
+}
+
+header > nav > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+}
+header > nav > ul > li {
+    display: inline;
+    padding-top: 0;
+    font-size: 1.8rem;
+}
+header > nav > ul > li > a {
+    color: white;
+    text-decoration: none;
+}
+header h1 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+header h2 {
+    margin-top: 0;
+    font-size: 3rem;
+    width: 30vw;
+}
+
+header section {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+}
+
+header p {
+    width: 40vw;
+}
+
+#call-to-action {
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 1em 2em;
+    background-color: #E9724C;
+    text-decoration: none;
+    position: relative;
+    top: 3em;
+}
+
+main {
+    height: 100vh;
+}
+main h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+@media (max-width: 1080px) {
+    header {
+        background-position-x: -600px;
+        height: 98vh;
+    }
+
+    header sectioN {
+        left: 5vw;
+    }
+    header h2 {
+        width: 90vw;
+    }
+    header p {
+        width: 90vw;
+    }
+}
